@@ -54,3 +54,9 @@ GROUP BY hotel_id
 HAVING
     COUNT(*) >= 50
     AND AVG(total_price) > 3000000;
+/*
+Cách tối ưu hơn : Cách 2
+Vì: Cách 1: Chạy FROM -> GRUOP BY -> HAVING 
+=> Tốn DATA
+CÁCH 2: Lọc trước rồi -> GRUOP BY làm việc nhanh hơn => ĐỠ tốn DATA
+*/
